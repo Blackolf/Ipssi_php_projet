@@ -1,0 +1,10 @@
+<?php
+$session=TRUE;
+$cookie=FALSE;
+$test_inter=TRUE;
+if($session){
+  session_start();
+}
+if($cookie){
+  session_start();
+}

@@ -1,23 +1,13 @@
 <?php
 
-namespace Project\ParamConfig{
+define ('Host','localhost');
+define ('datebase','ipssi');
+define ('Login','root');
+define ('password','');
 
-
-  function Host(){
-    return define ('Host','localhost');
-  }
-  function datebase(){
-    return define ('datebase','ipssi');
-  }
-  function Login(){
-    return define ('Login','root');
-  }
-  function password(){
-    return define ('password','');
-  }
-
-
-
-
-
+if($test_inter){
+  define ('Host','localhost');
+  define ('datebase','ipssi');
+  define ('Login','root');
+  define ('password','');
 }

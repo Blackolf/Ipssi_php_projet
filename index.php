@@ -5,7 +5,7 @@ require_once ('config/routing.php');
 require_once ('req/header.php');
 require_once ('req/menu.php');
 
-if(Dbb\connect()){
+if(connect()){
   echo "connection réussi";
 }else {
   echo "connection fail";

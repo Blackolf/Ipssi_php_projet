@@ -1,4 +1,5 @@
 <?php
+require_once ('config/environnement.php');
 require_once ('main/main.php');
 require_once ('config/routing.php');
 require_once ('req/header.php');

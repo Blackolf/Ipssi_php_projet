@@ -2,7 +2,6 @@
 require_once ('main/main.php');
 require_once ('config/routing.php');
 require_once ('req/header.php');
-require_once ('req/menu.php');
 
 if(Dbb\connect()){
   echo "connection réussi";

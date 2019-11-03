@@ -1,28 +1,3 @@
-<?php
-session_start();
-
-if(isset($_POST['connect'])){
-  require_once('authen.php');
-  $trylogin = loggin($_POST['user_login'],$_POST['user_pwd']);
-}
-
-if(isset($_POST['remember'])){
-  setcookie('user_login', $_POST['user_login'], time() + (86400 * 30), "/");
-}
-
-$msg ='';
-if(isset($trylogin)){
-  if($trylogin){
-    $msg = 'connextion réussi';
-  }else {
-    $msg = 'connection fail <br />
-    user name or password incorrect';
-  }
-
-}elseif(isset($_SESSION['user_id'])){
-  $msg = 'connextion réussi';
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
